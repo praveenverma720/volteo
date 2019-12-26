@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:scrollbars="none"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Employee Name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_add_circle_blue_24dp"/>
+
+            <EditText
+                android:id="@+id/eNameET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_enter_employee_name"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/text_color"
+                android:lines="1"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c1c1c1"
+            android:layout_marginTop="10dp"/>
+
+
+        <!--Employee Qualification Name-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_add_circle_blue_24dp"/>
+
+                <TextView
+                    android:id="@+id/eQualificationET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Select Your Qualification"
+                    android:textColor="@color/text_color"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:weightSum="3">
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="B.Tech"
+                    android:layout_above="@+id/button"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="M.Tech"
+                    android:checked="false"
+                    android:layout_weight="1"/>
+
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Phd"
+                    android:checked="false"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c1c1c1"
+            android:layout_marginTop="10dp"/>
+
+
+        <!--Employee College Name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_add_circle_blue_24dp"/>
+
+            <EditText
+                android:id="@+id/eCollegeET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_enter_college_name"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/text_color"
+                android:lines="1"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c1c1c1"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <!--Employee Passing Year-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_add_circle_blue_24dp"/>
+
+            <Spinner
+                android:id="@+id/eYearSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:prompt="@string/spinner_title"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c1c1c1"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <!--Employee Branch Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_add_circle_blue_24dp"/>
+
+            <EditText
+                android:id="@+id/eBranchET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_enter_branch_name"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/text_color"
+                android:lines="1"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c1c1c1"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <!--Employee Marks-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_add_circle_blue_24dp"/>
+
+            <EditText
+                android:id="@+id/ePerctengeET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_enter_percentage"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/text_color"
+                android:lines="1"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c1c1c1"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit and Check Profile"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:textStyle="bold"
+            android:background="@drawable/blue_color_round_bg_solid_10dp"/>
+
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:scrollbars="none"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Employee Name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color"
+                android:lines="1"
+                android:text="Name"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/eNameTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color"
+                android:lines="1"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c1c1c1"
+            android:layout_marginTop="10dp"/>
+
+
+        <!--Employee Qualification Name-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_color"
+                    android:lines="1"
+                    android:text="Qualification"
+                    android:textStyle="bold"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/eQualificationTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Select Your Qualification"
+                    android:textColor="@color/text_color"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c1c1c1"
+            android:layout_marginTop="10dp"/>
+
+
+        <!--Employee College Name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color"
+                android:lines="1"
+                android:text="College Name"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/eCollegeTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color"
+                android:lines="1"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c1c1c1"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <!--Employee Passing Year-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color"
+                android:lines="1"
+                android:text="Passing Year"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/eYearTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color"
+                android:lines="1"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c1c1c1"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <!--Employee Branch Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color"
+                android:lines="1"
+                android:text="Branch Name"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/eBranchET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color"
+                android:lines="1"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c1c1c1"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <!--Employee Marks-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color"
+                android:lines="1"
+                android:text="Marks"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/ePerctengeET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color"
+                android:lines="1"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c1c1c1"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

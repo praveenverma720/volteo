@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Volteo</string>
+    <string name="lbl_new_employee_title">Enter New Employee Name</string>
+    <string name="hint_enter_employee_name">Enter Employee Name Here</string>
+    <string name="hint_enter_college_name">Enter College Name</string>
+    <string name="hint_enter_branch_name">Enter Branch Name</string>
+    <string name="spinner_title">Select Your Passing Year</string>
+    <string name="hint_enter_percentage">Enter Your Marks</string>
+</resources>
